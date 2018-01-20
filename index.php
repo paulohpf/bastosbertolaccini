@@ -50,14 +50,14 @@
 			</div>		
 		</div>	  
 	</nav>
-		<div id="top" class="header">
+		<section id="top" class="header">
 			<div class="container">
 				<div class="saibaMais">
 					<a class="btn scrollSuave" href="#escritorio">Saiba Mais</a>
 				</div>
 			</div>	
-		</div>
-		<div id="escritorio" class="topic escritorio">
+		</section>
+		<section id="escritorio" class="topic escritorio">
 			<div class="container">
 				<h2><?php echo $post_4->post_title; ?></h2>
 				
@@ -77,8 +77,8 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div id="areaatuacao" class="topic areaatuacao">
+		</section>
+		<section id="areaatuacao" class="topic areaatuacao">
 			<div class="container">
 			<h2>ÁREAS DE ATUAÇÃO</h2>
 			<div>
@@ -105,8 +105,8 @@
 				<p>Nossa atuação se dá em sede administrativa ou judicial, de pessoas físicas e jurídicas perante o Fisco, cuidando de seus interesses, direitos e deveres relacionados aos tributos. Em tal área do direito, cuida-se não somente da atuação repressiva, por meio de defesa frente à cobrança excessiva de tributos, ou mesmo para restituição daqueles pagos a maior, como também em atuação preventiva, por meio de planejamento tributário.</p>
 			</div>
 			</div>
-		</div>
-		<div id="profissionais" class="topic profissionais">
+		</section>
+		<section id="profissionais" class="topic profissionais">
 			<div class="container">
 				<h2>PROFISSIONAIS</h2>
 				<div class="ricardo">
@@ -142,27 +142,30 @@
 					</ul>
 				</div>
 			</div>
-		</div>
-		<div id="blog" class="topic blog">
+		</section>
+		<section id="blog" class="topic blog">
 			<div class="container">
 				<h2>Notícias Juridicas</h2>
 				<div class="blogTopics">
-					<div><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/image1.jpg" title="I am a slide.">
+					<article><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/image1.jpg" title="I am a slide.">
+						<h3>Lorem ipsum</h3>
 						<p class="data">November 23, 2017</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus neque ac velit tristique interdum. Quisque ut sodales nisl. Phasellus efficitur faucibus euismod. Nunc sed diam sit amet metus venenatis sagittis. Aenean ut nibh turpis. Curabitur nisl ipsum, dignissim nec sapien quis, sodales placerat sapien. Vivamus mollis aliquam odio quis consectetur. Nullam volutpat nec sem nec vestibulum. Sed risus lacus, tincidunt eu venenatis quis, convallis a ligula. Donec a convallis magna. Aenean suscipit sed est sed ornare. Vestibulum sit amet laoreet est, in consequat ligula.</p>
+					</article>
+					<article><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/image1.jpg" title="I am another slide.">
 						<h3>Lorem ipsum</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus neque ac velit tristique interdum. Quisque ut sodales nisl. Phasellus efficitur faucibus euismod. Nunc sed diam sit amet metus venenatis sagittis. Aenean ut nibh turpis. Curabitur nisl ipsum, dignissim nec sapien quis, sodales placerat sapien. Vivamus mollis aliquam odio quis consectetur. Nullam volutpat nec sem nec vestibulum. Sed risus lacus, tincidunt eu venenatis quis, convallis a ligula. Donec a convallis magna. Aenean suscipit sed est sed ornare. Vestibulum sit amet laoreet est, in consequat ligula.</p></div>
-					<div><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/image1.jpg" title="I am another slide.">
 						<p class="data">November 22, 2017</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus neque ac velit tristique interdum. Quisque ut sodales nisl. Phasellus efficitur faucibus euismod. Nunc sed diam sit amet metus venenatis sagittis. Aenean ut nibh turpis. Curabitur nisl ipsum, dignissim nec sapien quis, sodales placerat sapien. Vivamus mollis aliquam odio quis consectetur. Nullam volutpat nec sem nec vestibulum. Sed risus lacus, tincidunt eu venenatis quis, convallis a ligula. Donec a convallis magna. Aenean suscipit sed est sed ornare. Vestibulum sit amet laoreet est, in consequat ligula.</p>
+					</article>
+					<article><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/image1.jpg" title="I am another slide.">
 						<h3>Lorem ipsum</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus neque ac velit tristique interdum. Quisque ut sodales nisl. Phasellus efficitur faucibus euismod. Nunc sed diam sit amet metus venenatis sagittis. Aenean ut nibh turpis. Curabitur nisl ipsum, dignissim nec sapien quis, sodales placerat sapien. Vivamus mollis aliquam odio quis consectetur. Nullam volutpat nec sem nec vestibulum. Sed risus lacus, tincidunt eu venenatis quis, convallis a ligula. Donec a convallis magna. Aenean suscipit sed est sed ornare. Vestibulum sit amet laoreet est, in consequat ligula.</p></div>
-					<div><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/image1.jpg" title="I am another slide.">
 						<p class="data">November 22, 2017</p>
-						<h3>Lorem ipsum</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus neque ac velit tristique interdum. Quisque ut sodales nisl. Phasellus efficitur faucibus euismod. Nunc sed diam sit amet metus venenatis sagittis. Aenean ut nibh turpis. Curabitur nisl ipsum, dignissim nec sapien quis, sodales placerat sapien. Vivamus mollis aliquam odio quis consectetur. Nullam volutpat nec sem nec vestibulum. Sed risus lacus, tincidunt eu venenatis quis, convallis a ligula. Donec a convallis magna. Aenean suscipit sed est sed ornare. Vestibulum sit amet laoreet est, in consequat ligula.</p></div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus neque ac velit tristique interdum. Quisque ut sodales nisl. Phasellus efficitur faucibus euismod. Nunc sed diam sit amet metus venenatis sagittis. Aenean ut nibh turpis. Curabitur nisl ipsum, dignissim nec sapien quis, sodales placerat sapien. Vivamus mollis aliquam odio quis consectetur. Nullam volutpat nec sem nec vestibulum. Sed risus lacus, tincidunt eu venenatis quis, convallis a ligula. Donec a convallis magna. Aenean suscipit sed est sed ornare. Vestibulum sit amet laoreet est, in consequat ligula.</p>
+					</article>
 				</div>
 			</div>			
-		</div>
-		<div id="contato" class="topic contato">
+		</section>
+		<section id="contato" class="topic contato">
 			<div class="container">
 				<h2>CONTATO</h2>
 				<div class="formcontato">
@@ -192,7 +195,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/prefixfree.min.js" type="application/javascript"></script>
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/bootstrap.js" type="text/javascript"></script>
