@@ -67,7 +67,7 @@ body {
 }
 
 .affix-top .nav.navbar-nav{
-    margin-top: 1%;
+    margin-top: 1vh;
 }
 
 .affix .nav.navbar-nav{
@@ -142,7 +142,7 @@ body {
 
     .navbar .logo-colors .right-bar{
         float: right;
-        width: 98%;
+        width: 98.222%;
         height: 20px;
         background: #052a45;
         margin-top: 5px;     
@@ -239,7 +239,7 @@ body {
     position: relative;
     overflow: hidden;
     padding-bottom: 50px;
-    min-height: 100vh;
+    min-height: 50vh;
 }
 
 .topic h2{
@@ -251,12 +251,12 @@ body {
     margin-bottom: 50px;
 }
 
-.topic h3{
+.topic h3, .post.type-post .entry-title{
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
-    font-size: 24px;
-    text-align: center;
-    padding-bottom: 20px;
+    font-size: 18px;
+    text-align: left;
+    padding-bottom: 10px;
     text-transform: uppercase;
 }
 
@@ -464,7 +464,7 @@ body {
 }
 
 .blog .container .blogTopics article{
-    max-width: 26vw;
+    max-width: 300px;
     float: left;
 }
 
@@ -473,8 +473,11 @@ body {
 }
 
 .blog .container .blogTopics img{
+    display: block;
     max-width: 100%;
-    max-height: 100%;    
+    width: auto;
+    height: auto;
+    margin: 0 auto;
 }
 
 .blog .container .blogTopics .data{
@@ -518,7 +521,7 @@ form#formcontato {
     padding-left: 50px;
 }
 
-.inputBlock{
+.inputBlock {
     width: 300px;
     margin-bottom: 25px;
     float: left;
@@ -527,17 +530,26 @@ form#formcontato {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.comment-form .inputBlock{
+    width: 100%;
+}
+
+.comment-form .inputBlock textarea{
+    height: auto;
+}
+
 .inputBlock input, .inputBlock textarea{
     width: 100%;
     padding: 15px;
     border-radius: 5px;
+    resize: none;
 }
 
 .inputBlock textarea{
 	height: 100px;
 }
 
-.contato .formcontato button{
+.contato .formcontato button, .submit{
     color: #fff;
     background-color: #052a45;
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -607,7 +619,158 @@ form#formcontato {
 
 .contato .informacoes .maps iframe{
 	width: 100%;
-}        
+}
+
+/*      Blog        */
+
+.site-main {
+    margin-top: 200px;
+    margin-bottom: 10%;
+}
+
+.post.type-post .attachment-post-thumbnail {
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 400px;
+    width: auto;
+    height: auto;
+}
+
+.post.type-post p {
+    text-indent: 15px;
+}
+
+/*--------------------------------------------------------------
+14.0 Comments
+--------------------------------------------------------------*/
+
+#comments {
+	clear: both;
+	padding: 2em 0 0.5em;
+}
+
+#comments a {
+	color: #101010;
+}
+
+.comments-title {
+	font-size: 20px !important;
+	margin-bottom: 1.5em;
+}
+
+.comment-list,
+.comment-list .children {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.comment-list li:before {
+	display: none;
+}
+
+.comment-body {
+	margin-left: 65px;
+}
+
+.comment-author {
+	font-size: 16px;
+	margin-bottom: 0.4em;
+	position: relative;
+	z-index: 2;
+}
+
+.comment-author .avatar {
+	height: 50px;
+	left: -65px;
+	position: absolute;
+	width: 50px;
+}
+
+.comment-author .says {
+	display: none;
+}
+
+.comment-meta {
+	margin-bottom: 1.5em;
+}
+
+.comment-metadata {
+	color: #767676;
+	font-size: 10px;
+	font-weight: 800;
+	letter-spacing: 0.1818em;
+	text-transform: uppercase;
+}
+
+.comment-metadata a {
+	color: #767676;
+}
+
+.comment-metadata a.comment-edit-link {
+	color: #222;
+	margin-left: 1em;
+}
+
+.comment-body {
+	color: #333;
+	font-size: 14px;
+	margin-bottom: 4em;
+}
+
+.comment-reply-link {
+	font-weight: 800;
+	position: relative;
+}
+
+.comment-reply-link .icon {
+	color: #222;
+	left: -2em;
+	height: 1em;
+	position: absolute;
+	top: 0;
+	width: 1em;
+}
+
+.comment-reply-title {
+	font-size: initial;
+}
+
+.children .comment-author .avatar {
+	height: 30px;
+	left: -45px;
+	width: 30px;
+}
+
+.bypostauthor > .comment-body > .comment-meta > .comment-author .avatar {
+	border: 1px solid #333;
+	padding: 2px;
+}
+
+.no-comments,
+.comment-awaiting-moderation {
+	color: #767676;
+	font-size: 14px;
+	font-style: italic;
+}
+
+.comments-pagination {
+	margin: 2em 0 3em;
+}
+
+.comments-area textarea {
+	resize: none;
+	margin-top: 10px;
+	padding: 10px;
+	width: 100%;
+}
+
+.form-submit {
+	text-align: right;
+}
+
 
 /*      Menu        */
 
@@ -617,33 +780,38 @@ body.login div#login h1 a {
 
 /*      Mobile      */
 
-@media screen and (max-width:1030px) and (min-width: 900px) {
-	
-	.container-fluid {
-		padding: 0;
-		margin: 0;
-	}
+@media screen and (max-width:1130px) and (min-width: 800px) {
 
 	.navbar-default .navbar-nav > li > a {
 		letter-spacing: 0;
 	}
 
-	.affix-top.navbar .logo-colors .left-bar {
-		width: 280px;
-	}
+    .navbar-default .navbar-nav > li > a {
+    	font-size: 12px
+    }
 
-	.affix.navbar .logo-colors .left-bar {
-		width: 190px;
-	}
+    .navbar .logo-colors .title {
 
-    .affix.navbar .logo-colors .title {
-        width: 205px;
+    }
+
+    .navbar .logo-colors .right-bar {
+    	width: 97.222%;
     }
 }
 
+@media screen and (max-width:799px) {
 
+	.navbar-default .navbar-nav > li > a {
+		font-size: 12px;
+	}
 
-@media screen and (max-device-width:800px) {
+	.navbar-collapse .nav.navbar-nav {
+		display: none;
+	}
+
+	.collapse.in .nav.navbar-nav {
+		display: block;
+	}
 
     h2{
         font-size: 30px !important;
@@ -687,15 +855,11 @@ body.login div#login h1 a {
     }
 
     .affix-top.navbar .logo-colors .left-bar{
-        width: 300px;
+        width: 310px;
     }
 
     .affix.navbar .logo-colors .left-bar{
         width: 190px;
-    }
-
-    .header {
-
     }
 
     .escritorio .container div{
@@ -704,21 +868,12 @@ body.login div#login h1 a {
         margin: 0 auto !important;
     }
 
-    .escritorio .container .informacoes div h3{
-        font-size: 18px;
-    }
-
-    .areaatuacao {
-
-    }
-
     .areaatuacao h3{
         font-size: 24px !important;
     }
 
     .areaatuacao p{
         padding-top: 10px;
-        font-size: 18px;
     }
 
     .areaatuacao .container div:nth-child(even){
@@ -733,10 +888,6 @@ body.login div#login h1 a {
     	float: none !important;
     	margin: 0 auto !important;
     	padding: 0 !important;
-    }
-
-    .profissionais {
-
     }
     
     .objetivos .container div{
@@ -765,10 +916,6 @@ body.login div#login h1 a {
         width: 100%;
     }
 
-    .blog .container .blogTopics p{
-        font-size: 18px;
-    }
-
     .blog .container .blogTopics article{
     	max-width: 100%;
     	float: none;
@@ -776,10 +923,6 @@ body.login div#login h1 a {
 
     .blog .container .blogTopics article + article{
     	margin-left: 0;
-    }
-
-    .contato{
-
     }
 
     .contato .formcontato{
@@ -814,6 +957,24 @@ body.login div#login h1 a {
 
     .contato .informacoes .email a{
         font-size: 15px !important;
+    }
+
+    @media screen and (max-width:420px) {
+
+            /*  Blog    */
+
+        .post.type-post p {
+            padding: 0 !important;
+        }
+
+    	.comments-area textarea {
+			width: 100%;
+		}
+
+		.navbar .logo-colors .right-bar {
+			width: 97%;
+		}
+
     }
     
 }
