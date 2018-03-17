@@ -1092,6 +1092,13 @@ body.login div#login h1 a {
         font-size: inherit;
     }
 
+    /*  Profissionais   */
+
+    .profissionais .container .ricardo img, .profissionais .container .andre img {
+        width: 75%;
+        height: auto;
+    }
+
     /*    Blog    */
 
     .post.type-post p {
