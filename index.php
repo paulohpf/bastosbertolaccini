@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php include 'header_index.php'; ?>
 <?php
-	global $blog;
+global $blog;
 
 	$post_4 = get_post( 4 ); //Pagina Escritorio
 	$post_14 = get_post( 14 ); //Pagina Missão
@@ -17,58 +17,58 @@
 	//Carregamento dos posts da categoria Blog(2)
 	$args = array( 'posts_per_page' => 3,  'category' => '2', 'post_status' => 'publish' );	
 	$blogPosts = get_posts( $args );
-?>
-		<section id="top" class="header">
-			<div class="container">
-				<div class="saibaMais">
-					<a class="btn scrollSuave" href="#escritorio">Saiba Mais</a>
+	?>
+	<section id="top" class="header">
+		<div class="container">
+			<div class="saibaMais">
+				<a class="btn scrollSuave" href="#escritorio">Saiba Mais</a>
+			</div>
+		</div>	
+	</section>
+	<section id="escritorio" class="topic escritorio">
+		<div class="container">
+			<h2><?php echo $post_4->post_title; ?></h2>
+			
+			<h4><?php echo $post_4->post_content; ?></h4>
+			<div class="informacoes">
+				<div class='missao'>
+					<h3><?php echo $post_14->post_title; ?></h3>
+					<h4><?php echo $post_14->post_content; ?></h4>
 				</div>
-			</div>	
-		</section>
-		<section id="escritorio" class="topic escritorio">
-			<div class="container">
-				<h2><?php echo $post_4->post_title; ?></h2>
-				
-				<h3><?php echo $post_4->post_content; ?></h3>
-				<div class="informacoes">
-					<div class='missao'>
-						<h2><?php echo $post_14->post_title; ?></h2>
-						<h3><?php echo $post_14->post_content; ?></h3>
-					</div>
-					<div class='visao'>
-						<h2><?php echo $post_17->post_title; ?></h2>
-						<h3><?php echo $post_17->post_content; ?></h3>
-					</div>
-					<div class='valores'>
-						<h2><?php echo $post_19->post_title; ?></h2>
-						<h3><?php echo $post_19->post_content; ?></h3>
+				<div class='visao'>
+					<h3><?php echo $post_17->post_title; ?></h3>
+					<h4><?php echo $post_17->post_content; ?></h4>
+				</div>
+				<div class='valores'>
+					<h3><?php echo $post_19->post_title; ?></h2>
+						<h4><?php echo $post_19->post_content; ?></h4>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section id="areaatuacao" class="topic areaatuacao">
 			<div class="container">
-			<h2>ÁREAS DE ATUAÇÃO</h2>
-			<div>
-				<h3><?php echo $post_24->post_title; ?></h3>
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/civil.jpg">
-				<p><?php echo $post_24->post_content; ?></p>
-			</div>
-			<div>
-				<h3><?php echo $post_26->post_title; ?></h3>
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/imobiliario.jpg">
-				<p><?php echo $post_26->post_content; ?></p>
-			</div>
-			<div>
-				<h3><?php echo $post_28->post_title; ?></h3>
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/empresarial.jpg">
-				<p><?php echo $post_28->post_content; ?></p>
-			</div>
-			<div>
-				<h3><?php echo $post_30->post_title; ?></h3>
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tributario.jpg">
-				<p><?php echo $post_30->post_content; ?></p>
-			</div>
+				<h2>ÁREAS DE ATUAÇÃO</h2>
+				<div>
+					<h3><?php echo $post_24->post_title; ?></h3>
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/civil.jpg">
+					<p><?php echo $post_24->post_content; ?></p>
+				</div>
+				<div>
+					<h3><?php echo $post_26->post_title; ?></h3>
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/imobiliario.jpg">
+					<p><?php echo $post_26->post_content; ?></p>
+				</div>
+				<div>
+					<h3><?php echo $post_28->post_title; ?></h3>
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/empresarial.jpg">
+					<p><?php echo $post_28->post_content; ?></p>
+				</div>
+				<div>
+					<h3><?php echo $post_30->post_title; ?></h3>
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tributario.jpg">
+					<p><?php echo $post_30->post_content; ?></p>
+				</div>
 			</div>
 		</section>
 		<section id="profissionais" class="topic profissionais">
@@ -86,7 +86,7 @@
 				</div>
 			</div>
 		</section>
-		<section id="blog" class="topic blog">
+<!-- 		<section id="blog" class="topic blog">
 			<div class="container">
 				<h2>Notícias Juridicas</h2>
 				<div class="blogTopics">					
@@ -109,5 +109,5 @@
 
 				</div>
 			</div>			
-		</section>
-<?php include 'footer.php'; ?>
+		</section> -->
+		<?php include 'footer.php'; ?>

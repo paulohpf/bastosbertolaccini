@@ -34,4 +34,4 @@
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/bootstrap.js" type="text/javascript"></script>
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/CustomEvents.js" type="text/javascript"></script>		
 	</body>
-</html>
+	</html>
