@@ -86,28 +86,30 @@ global $blog;
 				</div>
 			</div>
 		</section>
-<!-- 		<section id="blog" class="topic blog">
+		<section id="blog" class="topic blog">
 			<div class="container">
 				<h2>Notícias Juridicas</h2>
-				<div class="blogTopics">					
+				<div class="blogTopics">
+					<?php
 
-				<?php
+					get_search_form();
+
 				//	Trago os posts da categoria 2
 
-				global $post;
-				$args = array( 'numberposts' => 3, 'cat' => 2 );
-				$myposts = get_posts( $args );
-				foreach( $myposts as $post ) : setup_postdata($post); ?>
-				<article>
-					<a href="<?php the_permalink(); ?>"> <?php echo get_the_post_thumbnail($post->ID); ?> </a>
-					<a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
-					<p class="data"><?php the_date('d/m/Y'); ?> por <?php the_author(); ?></p>
-					<p><?php the_excerpt(); ?></p>
-					
-				</article>
+					global $post;
+					$args = array( 'numberposts' => 3, 'cat' => 2 );
+					$myposts = get_posts( $args );
+					foreach( $myposts as $post ) : setup_postdata($post); ?>
+					<article>
+						<?php /*<a href="<?php the_permalink(); ?>"> <?php echo get_the_post_thumbnail($post->ID); ?> </a>*/ ?>
+						<a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+						<p class="data">Publicado em <?php the_date('d/m/Y'); /*?> por <?php the_author();*/ ?></p>
+						<p><?php the_excerpt(); ?></p>
+
+					</article>
 				<?php endforeach; ?>
 
-				</div>
-			</div>			
-		</section> -->
-		<?php include 'footer.php'; ?>
+			</div>
+		</div>			
+	</section> 
+	<?php include 'footer.php'; ?>

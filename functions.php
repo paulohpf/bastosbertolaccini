@@ -10,7 +10,7 @@ function new_excerpt_more($more) {
 add_filter('excerpt_more', 'new_excerpt_more');
 
 function comment_form_text_area($arg) {
-	$arg['comment_field'] = '<div class="inputBlock"><textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" placeholder="Digite aqui o seu comentário" aria-required="true" required="required"></textarea></div>';
+	$arg['comment_field'] = '<div class="inputBlock"><textarea id="comment" name="comment" cols="45" rows="5" maxlength="65525" placeholder="Digite aqui o seu comentário*" aria-required="true" required="required"></textarea></div>';
 	return $arg;
 }
 
@@ -56,5 +56,10 @@ body.login div#login h1 a {
 
 <?php }
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
+/**
+ * SVG icons functions and filters.
+ */
+require get_parent_theme_file_path( '/icon-functions.php' );
 
 ?>

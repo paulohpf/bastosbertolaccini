@@ -1,8 +1,9 @@
 $( document ).ready(function() {
 
 	var location = window.location.pathname;
+	var locationSearch = window.location.search;
 
-	if(location == "/") {
+	if(location == "/" && locationSearch != "") {
 		function onScroll(event){
 			var scrollPos = $(document).scrollTop();
 			$('.navbar .navbar-nav li, .navbar .navbar-header').each(function () {

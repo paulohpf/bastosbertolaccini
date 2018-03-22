@@ -9,11 +9,15 @@
 		else :
 			the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
 		endif;
+
 		?>
+
+		<span class="data">Publicado em <?php the_date('d/m/Y'); ?></span>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
 		<?php
+
 		/* translators: %s: Name of current post */
 		the_content( sprintf(
 			__( 'Continue reading %s', 'twentyfifteen' ),

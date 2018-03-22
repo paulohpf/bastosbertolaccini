@@ -24,11 +24,19 @@
 						<span><a href="mailto:escritorio@bastosbertolaccini.adv.br"><i class="fa fa-envelope"></i>escritorio@bastosbertolaccini.adv.br</a></span>
 					</div>
 					<div class="maps">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.332473176227!2d-49.06630688506985!3d-22.341071723545525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bf6712f61e810d%3A0xfbade977de4f086e!2sR.+Anvar+Dabus%2C+3-50+-+Jardim+Paulista%2C+Bauru+-+SP!5e0!3m2!1spt-BR!2sbr!4v1510956027552" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+						<iframe title="Aqui está o lugar onde você pode nos encontrar" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.332473176227!2d-49.06630688506985!3d-22.341071723545525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bf6712f61e810d%3A0xfbade977de4f086e!2sR.+Anvar+Dabus%2C+3-50+-+Jardim+Paulista%2C+Bauru+-+SP!5e0!3m2!1spt-BR!2sbr!4v1510956027552" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
 		</section>
+		<footer>
+			<div class="copyrights">
+				<span>Todos os direitos reservados</span>
+				</div>
+			<div class="social">
+				<a class="facebook" href="https://www.facebook.com/bastosbertolaccini/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+			</div>
+		</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/prefixfree.min.js" type="application/javascript"></script>
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/bootstrap.js" type="text/javascript"></script>
