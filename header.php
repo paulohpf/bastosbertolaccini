@@ -4,8 +4,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="HandheldFriendly" content="True" />
 	<?php
-	$title = get_bloginfo();
-	$title = $title." - ".get_bloginfo('description');
+	$title = wp_title('');
+	$title = $title . ' - ' . get_bloginfo();
 	?>
 	<meta name="description" content="Escritório de advocacia, Fundado em 1994. Através dos seus mais de 20 anos de atuação, o escritório tem buscado oferecer, com eficiência e com um atendimento personalizado, as melhores soluções para cada cliente, sejam estes pessoas físicas ou jurídicas, pautado na ética e competência.">
 	<script type="application/ld+json">
@@ -53,7 +53,7 @@
 
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
 	<meta name="theme-color" content="#052a45">
-	<title><?php echo $title ?></title>
+	<title><?php wp_title( '|', true, 'right' ); ?></title>
 </head>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="10">

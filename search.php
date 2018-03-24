@@ -20,7 +20,6 @@ include 'header.php'; ?>
 		<?php else : ?>
 			<h1 class="page-title"><?php _e( 'Nothing Found', 'twentyseventeen' ); ?></h1>
 		<?php endif; 
-			get_search_form();
 		?>
 	</header><!-- .page-header -->
 
