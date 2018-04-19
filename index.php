@@ -109,6 +109,8 @@ global $blog;
 					</article>
 				<?php endforeach; ?>
 
+				<a class="todasNoticias" href="http://bastosbertolaccini.adv.br/todas-as-noticias">Ver todas</a>
+
 			</div>
 		</div>			
 	</section> 
