@@ -19,7 +19,7 @@
 						<span><a href="tel:01432234088"><i class="fa fa-phone"></i>(014)3223-4088</a><a href="tel:01432230146"><i class="fa fa-phone"></i>(014)3223-0146</a><a href="tel:014991043272"><i class="fa fa-mobile"></i>(014)99104-3272</a></span>
 					</div>
 					<div class="endereco">
-						<span><a><i class="fa fa-map-marker"></i>Rua Anvar Dabus, 3-50 - Jardim Aeroporto - CEP 17012-320 - Bauru/SP</a></span>
+						<span><a><i class="fa fa-map-marker"></i>Rua Anvar Dabus, 3-50 - Jardim Aeroporto - CEP 17017-120 - Bauru/SP</a></span>
 					</div>
 					<div class="email">
 						<span><a href="mailto:escritorio@bastosbertolaccini.adv.br"><i class="fa fa-envelope"></i>escritorio@bastosbertolaccini.adv.br</a></span>
@@ -41,6 +41,15 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/prefixfree.min.js" type="application/javascript"></script>
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/bootstrap.js" type="text/javascript"></script>
-		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/CustomEvents.js" type="text/javascript"></script>		
+		<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/CustomEvents.js" type="text/javascript"></script>	
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114571654-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-114571654-1');
+		</script>
 	</body>
-	</html>
+</html>
